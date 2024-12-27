@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaLibraryBookApplication {
     public static void main(String[] args) {
         SpringApplication.run(JavaLibraryBookApplication.class, args);
+        System.out.println("Spring läuft");
 
         
 
