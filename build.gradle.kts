@@ -9,7 +9,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(23))
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
 
@@ -19,9 +19,11 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0") // Neueste Version verwenden
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
+
 
 tasks.named<Test>("test") {
     useJUnitPlatform()
